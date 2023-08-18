@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Book.Library</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Book.Library.Application\Book.Library.Application.csproj" />
+    <ProjectReference Include="..\Book.Library.Domain.Tests\Book.Library.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="8.3.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
+  </ItemGroup>
+
+</Project>

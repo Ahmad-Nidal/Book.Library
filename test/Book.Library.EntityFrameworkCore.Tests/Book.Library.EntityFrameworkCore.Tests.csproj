@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Book.Library</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Book.Library.EntityFrameworkCore\Book.Library.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Book.Library.TestBase\Book.Library.TestBase.csproj" />
+    <PackageReference Include="Abp" Version="8.3.1" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="7.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
+  </ItemGroup>
+
+</Project>
